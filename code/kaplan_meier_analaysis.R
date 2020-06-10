@@ -79,7 +79,6 @@ render_survPlot <- function(survFit, ylab, ylim, yPos_of_line_descr){
 ae <- read.xlsx("C:\\Users\\Elly\\Uni\\Masterarbeit\\data\\xlsx\\AE.xlsx", 1)
 
 ############################### TV_MI ################################
-
 # filter for death and TV_MI
 idx <- ae %>% filter(((aemiehdef == "Yes" | aemiscaidef == "Yes") & aemibytv == "Yes") | aedth == "Yes")
 
